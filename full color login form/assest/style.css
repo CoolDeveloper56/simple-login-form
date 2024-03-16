@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+:root {
+    --width-colors-red: 10px;
+    --height-colors-red: 150px;
+    --width-colors-green: 150px;
+    --height-colors-green: 10px;
+    --width-colors-blue: 150px;
+    --height-colors-blue: 10px;
+    --width-colors-purple: 150px;
+    --height-colors-purple: 10px;
+    --blur-filter: 1px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.section-container {
+    display: flex;
+    margin-top: 10em;
+}
+
+.section-container .Colors {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+}
+
+.section-container .Colors .red_color_position {
+    width: var(--width-colors-red);
+    height: var(--height-colors-red);
+    background: #ff0000;
+    margin-top: 1em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    filter: blur(var(--blur-filter));
+}
+
+.section-container .Colors .green_color_position {
+    width: var(--width-colors-green);
+    height: var(--height-colors-green);
+    background: #00ff00;
+    margin-top: 24.35em;
+    margin-left: 2em;
+    position: absolute;
+    filter: blur(var(--blur-filter));
+}
+
+.section-container .Colors .blue_color_position {
+    width: var(--height-colors-blue);
+    height: var(--width-colors-blue);
+    background: #0000ff;
+    margin-left: 18.11em;
+    margin-top: 6em;
+    position: absolute;
+    filter: blur(var(--blur-filter));
+}
+
+.section-container .Colors .purple_color_position {
+    width: var(--width-colors-purple);
+    height: var(--height-colors-purple);
+    background: #a020f0;
+    margin-left: 4em;
+    position: absolute;
+    filter: blur(var(--blur-filter));
+}
+
+.section-container form {
+    width: 300px;
+    height: 400px;
+    background: #ffffff33;
+    border: 2px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.section-container form .welcome-login h3 {
+    margin-top: 0em;
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.section-container form .Username {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.section-container form .Username label {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.section-container form .Username input {
+    width: 280px;
+    height: 21px;
+    background: #fff;
+    border: 2px solid #ffffff33;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.section-container form .Password{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.section-container form .Password label{
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.section-container form .Password input{
+    width: 280px;
+    height: 21px;
+    background: #fff;
+    border: 2px solid #ffffff33;
+    margin-left: 10px;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.section-container form .show_hidden{
+    display: flex;
+}
+
+.section-container form .show_hidden .show-eyes{
+    position: absolute;
+    transform: translateX(260px);
+    margin-top: 8px;
+    cursor: pointer;
+    display: none;
+}
+.section-container form .show_hidden .close-eyes{
+    position: absolute;
+    transform: translateX(260px);
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.section-container form .submit_button_adlia{
+    margin-top: 5em;
+    margin-left: 6.5em;
+}
+
+.section-container form .submit_button_adlia button{
+    width: 100px;
+    height: 27px;
+    background: #fff;
+    border: 2px solid #fff;
+    color: black;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
